@@ -25,7 +25,7 @@ add_action( 'init', 'my_init_function' );
 
 <?php
 
-// Only run the code if you are in the main Loop for a page or post
+// Only run the code if you are in the main Loop for a page or post, use ! to reverse
 function only_run_in_main_loop( $content ) {
   if ( is_main_query() ) {
     // Run your code
