@@ -12,3 +12,13 @@ if ( has_filter( 'the_content', 'custom_plugin_function' ) ) {
 }
 
 ?>
+
+<?php
+
+// current_filter() tells you the action or the filter that is currently being run that your code is tied into
+function my_init_function() {
+  echo current_filter(); //'init'
+}
+add_action( 'init', 'my_init_function' );
+
+?>
